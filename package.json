@@ -4,17 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "azure-dev": "node server.js",
+    "azure-build": "next build",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "node server.js"
   },
   "dependencies": {
-    "isomorphic-unfetch": "^3.0.0",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "9.3.4",
+    "node-fetch": ">=2.6.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "serialize-javascript": ">=3.1.0"
   },
   "devDependencies": {
-    "serve": "^11.3.0"
+    "serve": "^11.3.2"
   }
 }
